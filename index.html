@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Store | Beleza e Cosméticos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="promo">
+    <strong>BEAUTY WEEK</strong>
+    <span>GANHE EM TODAS AS COMPRAS NO APP</span>
+    <b>1 MINI a partir de R$ 299</b>
+    <span>CUPOM <strong>APPWEEK</strong></span>
+  </div>
+
+  <header class="header">
+    <a class="logo" href="#">ANA BEAUTY</a>
+    <form class="search" id="searchForm">
+      <input id="searchInput" placeholder="Buscar produtos..." aria-label="Buscar produtos">
+      <button aria-label="Buscar">⌕</button>
+    </form>
+    <a class="header-link" href="#categorias">Lojas e Serviços</a>
+    <a class="header-link" href="#favoritos">♡ Favoritos</a>
+    <a class="header-link" href="#produtos">Minha conta</a>
+    <a class="cart" href="#produtos">🛍 <span id="cartCount">0</span></a>
+  </header>
+
+  <nav class="nav" id="categorias">
+    <a href="#produtos" data-category="Maquiagem">MAQUIAGEM</a>
+    <a href="#produtos" data-category="Perfumes">PERFUMES</a>
+    <a href="#produtos" data-category="Skincare">SKINCARE</a>
+    <a href="#produtos" data-category="Cabelos">CABELOS</a>
+    <a href="#produtos" data-category="Todos">SÓ NA BEAUTY STORE</a>
+    <a class="sale" href="#produtos">OFERTAS</a>
+    <a href="#produtos" data-category="Todos">MARCAS</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-art">
+        <div class="product-orbit">
+          <div class="bottle bottle-one">K<br><small>PARIS</small></div>
+          <div class="bottle bottle-two">BEAUTY</div>
+          <div class="cream">✦</div>
+        </div>
+      </div>
+      <div class="hero-copy">
+        <span class="launch">LANÇAMENTO</span>
+        <p class="brand-name">KÉRASTASE</p>
+        <p class="paris">PARIS</p>
+        <h1>Seu ritual de beleza começa aqui</h1>
+        <p>Descubra produtos especiais para sua rotina.</p>
+        <a href="#produtos" class="cta">COMPRE AGORA →</a>
+      </div>
+      <div class="hero-gift">
+        <div class="gift-circle">✧</div>
+        <b>UM MIMO PARA VOCÊ</b>
+        <p>Presentes especiais em compras selecionadas.</p>
+      </div>
+    </section>
+
+    <div class="benefits">
+      <a href="#produtos"><span>●</span> Ofertas especiais</a>
+      <a href="#produtos"><span>✦</span> Novidades</a>
+      <a href="#produtos"><span>◉</span> Marcas exclusivas</a>
+      <a href="#produtos"><span>▤</span> Guia de compras</a>
+      <a href="#produtos"><span>♡</span> Favoritos</a>
+    </div>
+
+    <section class="products-section" id="produtos">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SELEÇÃO ESPECIAL</p>
+          <h2>Escolhidos pra você</h2>
+        </div>
+        <span id="resultCount"></span>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty" id="emptyMessage" hidden>
+        Nenhum produto encontrado. Tente outra busca.
+      </p>
+    </section>
+
+    <section class="newsletter">
+      <div>
+        <p class="eyebrow">BELEZA NA SUA CAIXA DE ENTRADA</p>
+        <h2>Novidades e ofertas exclusivas</h2>
+      </div>
+      <form id="newsletterForm">
+        <input type="email" placeholder="Seu melhor e-mail" required>
+        <button class="cta">QUERO RECEBER</button>
+      </form>
+      <p id="newsletterMessage" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#">BEAUTY STORE</a>
+    <p>Beleza, cuidado e autoestima. © 2026</p>
+    <small>Projeto demonstrativo para fins de estudo.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
